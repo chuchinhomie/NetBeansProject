@@ -103,6 +103,11 @@ out.println("<head>");
 out.println("</head>");
             out.println("<body>");
             out.println("<form action=servlet2 method=post>");
+out.println("<header>");
+out.println("<nav>");
+out.println("<a href='descrip_libros.html'>Catalogo de Libros</a>");
+out.println("<a href='index.html'>Registro</a>");
+out.println("</nav>");
 out.println("<center>");
 out.println("<h1>Stock del Dia</h1>");
 
