@@ -118,7 +118,10 @@ if((sitems[i-1]).equals("c5"))
 price5 = 500;
 }
 
+
 }
+        int numeroAleatorio = (int) (1 + Math.random() * 4543);
+
 
 totalprice = price1 + price2 + price3 + price4 + price5;
 
@@ -128,7 +131,9 @@ out.println("</head>");
 out.println("<body>");    
  out.println("<div class=\"container d-flex justify-content-center mt-5 mb-5\">");       
  out.println(" <div class=\"row g-3\">");  
-   out.println("<div class=\"col-md-6\"> <span>"+username+" Tu total de pago</span>");     
+   out.println("<div class=\"col-md-6\"> <span>"+username+" Aqui esta tu total de pago</span>");
+out.println("<br><br>"); 
+ out.println("Tu Numero de folio es: " +numeroAleatorio);    
    out.println("<div class=\"card\">");         
      out.println("<div class=\"accordion\" id=\"accordionExample\">");           
        out.println("<div class=\"card\">");             
@@ -174,7 +179,11 @@ out.println("<body>");
           out.println("<div class=\"d-flex flex-column\"> <span>Hoy Pagas: (Peso Mexicano MXN)</span> </div> <span>"+totalprice+"</span>");          
        out.println("</div>");         
                 
-             out.println("<button id=\"botonpago\" onclick=\"location.href='contacto.html';\">Hacer Pago</button>");   
+             out.println("<button id=\"botonpago\" onclick=\"location.href='contacto.html';\">Hacer Pago</button>"); 
+out.println("<br><br>");
+out.println("Ver Catalogo de nuevo: "); 
+   out.println("<br> "); 
+out.println("<button id=\"botoncatalog\" onclick=\"location.href='descrip_libros.html';\">Ver Descripcion</button>");    
                 
         out.println("</div>");    
        out.println("</div>"); 
@@ -194,5 +203,8 @@ out.println("</html>");
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
+public static int randMove(){
+int randomNum = (int) Math.floor(Math.random() * 1345);
+return randomNum;
+}
 }
