@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	 version="3.0">
+    
+    <servlet>
+    <servlet-name>segundojsp</servlet-name>
+    <jsp-file>/segundojsp.jsp</jsp-file>
+</servlet>
+<!--mapping-->
+<servlet-mapping>
+    <servlet-name>segundojsp</servlet-name>
+    <url-pattern>/segundojsp/*</url-pattern>   
+</servlet-mapping>
+    
+    <servlet>
+    <servlet-name>tercerjsp</servlet-name>
+    <jsp-file>/tercerjsp.jsp</jsp-file>
+</servlet>
+<!--mapping-->
+<servlet-mapping>
+    <servlet-name>tercerjsp</servlet-name>
+    <url-pattern>/tercerjsp/*</url-pattern>   
+</servlet-mapping>
+    
+    
+    
+    
+    
+</web-app>
